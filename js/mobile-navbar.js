@@ -1,10 +1,9 @@
 var mobile = window.matchMedia('(max-width: 375px)');
 var navbar
 if(mobile.matches) {
-
+    
     var hamburger = document.getElementById('hamburger');
     navbar = document.getElementById('navbar');
-    var close = document.getElementById('close');
     let isOpened = false;
 
     hamburger.addEventListener('click', (e) => {

@@ -3,7 +3,7 @@
     .body {
         width: 768px;
     }
-    
+
     
     body .header {
         width: 768px;
@@ -24,7 +24,7 @@
         height: 343px;
     }
     
-    .news .news-left .news-left-container {
+    .news-left .news-left-container {
         width: 608px;
     }
     

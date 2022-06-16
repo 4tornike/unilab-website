@@ -1,12 +1,10 @@
-
-
+const sec3 = document.getElementById('sec3');
 const mainContainer = document.getElementsByClassName('main-container')[0];
+
 var tablet = window.matchMedia('(max-width: 768px)');
 var mobile = window.matchMedia('(max-width: 375px)');
 
 if(tablet.matches) {
-
-    const sec3 = document.getElementById('sec3');
 
     var sec3_text = document.createElement('p');
     sec3_text.style.width =  608 + 'px';

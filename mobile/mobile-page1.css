@@ -5,13 +5,12 @@
         padding: 0px;
     }
     
-    
     body {
         width: 375px;
         z-index: 99;
     }
 
-    .blur {
+    body .blur {
         z-index: 101;
         position: fixed;
         top: 0;
@@ -298,7 +297,7 @@
         grid-template-columns: 375px;
     }
     
-    .news.news-left {
+    .news .news-left {
         height: 388px;
     }
     
