@@ -1,6 +1,6 @@
-// const sec3 = document.getElementById('sec3');
-const mainContainer = document.getElementsByClassName('main-container')[0];
 
+
+const mainContainer = document.getElementsByClassName('main-container')[0];
 var tablet = window.matchMedia('(max-width: 768px)');
 var mobile = window.matchMedia('(max-width: 375px)');
 
@@ -143,46 +143,4 @@ if(mobile.matches) {
     sec3_text.style.content = 'In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus.'
     pageContainer.style.margin = '0px 71px 10px 71px'
     underline.style.margin = '0px 71px 30px 71px'
-
-    // var hamburger = document.getElementById('hamburger');
-    // var navbar = document.getElementById('navbar');
-
-    // hamburger.addEventListener('click', () => {
-    //     navbar.classList.add('.active');
-    //     console.log('clicked');
-    // })
-    // document.body.addEventListener('click',() => {
-    //     navbar.classList.remove('.active');
-    //     console.log('clicked');
-
-    // window.addEventListener('DOMContentLoaded', () => {
-    //     alert('click ok')
-    // })
-    // })
 }
-
-
-
-// if(mobile.matches) {
-
-//     document.getElementById('image').src = './image/Arrow\ Back@2x.png'
-//     sec3_text.style.width =  327 + 'px';
-//     sec3_text.style.height = '77px';
-//     sec3_text.style.display = 'flex'
-//     sec3_text.style.alignItems = 'center'
-//     sec3_text.style.content = 'In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus.'
-//     pageContainer.style.margin = '0px 71px 10px 71px'
-//     underline.style.margin = '0px 71px 30px 71px'
-
-//     // var hamburger = document.getElementById('hamburger');
-//     // var navbar = document.getElementById('navbar');
-
-//     // hamburger.addEventListener('click', () => {
-//     //     navbar.classList.add('.active');
-//     //     console.log('clicked');
-//     // })
-//     // document.body.addEventListener('click',() => {
-//     //     navbar.classList.remove('.active');
-//     //     console.log('clicked');
-//     // })
-// }

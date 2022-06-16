@@ -4,45 +4,45 @@
         width: 768px;
     }
     
-    .header {
+    body .header {
         width: 768px;
     }
     
-    .news {
+    body .main .news {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 768px;
         grid-template-columns: 768px;
     }
     
-    .news-left {
+    .news .news-left {
         height: 400px;
     }
     
-    .news-right {
+    .news .news-right {
         height: 343px;
     }
     
-    .news-left-container {
+    .news .news-left .news-left-container {
         width: 608px;
     }
     
-    .news-underline {
+    .news-left-container .news-underline {
         width: 600px;
         margin-top: 29px;
     }
     
-    .news-text-title {
+    .news-left-container .news-text-title {
         margin-top: 36px;
         margin-bottom: 9px;
     }
     
-    .news-right {
+    main .news .news-right {
         display: -ms-grid;
         display: grid;
     }
     
-    .news-right-container {
+    .news-right .news-right-container {
         width: 608px;
         height: 223px;
         display: -ms-grid;
@@ -53,25 +53,25 @@
         gap: 40px;
     }
     
-    .news-right-title {
+    .news-right-container .news-right-title {
         grid-area: title;
         margin: 0px;
     }
     
-    .travel {
+    .news-right-container .travel {
         grid-area: travel;
     }
     
-    .technology {
+    .news-right-container .technology {
         grid-area: technology;
     }
     
-    .sec2-container {
+    body .main .sec2-container {
         width: 768px;
         height: 1814px;
     }
     
-    .sec2 {
+    .sec2-container .sec2 {
         top: 40px;
         left: 80px;
         bottom: 80px;
@@ -79,23 +79,23 @@
         width: 608px;
     }
     
-    .trending {
+    .sec2 .trending-container .trending {
         width: 522px;
         height: 22px;
     }
     
-    .brackets2 {
+    .sec2 .trending-container .brackets2 {
         margin-left: 34px;
     }
     
-    .trending-grid {
+    .sec2-container .sec2 .trending-grid {
         width: 608px;
         height: 350px;
-        -ms-grid-columns: (284px)[2];
+        /* -ms-grid-columns: (284px)[2]; */
         grid-template-columns: repeat(2,284px);
     }
     
-    .trending3 {
+    .trending-grid .trending3 {
         display: none;
         pointer-events: none;
         -webkit-transform: translate(250%,0%);
@@ -115,7 +115,7 @@
         width: 204px;
     }
     
-    .happening-grid {
+    .sec2-container .sec2  .happening-grid {
         width: 608px;
         height: 1182px;
         -ms-grid-columns: 608px;
@@ -123,7 +123,7 @@
         row-gap: 40px;
     }
     
-    .happening-right {
+    .happening-grid .happening-right {
         -ms-grid-columns: 284px 40px 284px;
         grid-template-columns: repeat(2,284px);
         -webkit-column-gap: 40px;
@@ -132,84 +132,82 @@
         row-gap: 0px;
     }
     
-    .happening-left-header {
+    .happening-grid .happening-left .happening-left-container .happening-left-header {
         width: 528px;
     }
     
-    .happening-left-article {
+    .happening-left .happening-left-container .happening-left-article {
         width: 528px;
         height: 107px;
         -ms-grid-rows: 24px 47px;
         grid-template-rows: 24px 47px;
     }
     
-    .happening-left-article-text {
+    .happening-left-article .happening-left-article-text {
         margin: 0px;
     }
     
-    .image1 {
+    .happening-grid .happening-left-container .image1 {
         width: 608px;
         height: 430px;
         -o-object-fit: cover;
            object-fit: cover;
     }
     
-    .image2 {
+    .happening-grid .happening-left-container .image2 {
         width: 284px;
         height: 180px;
         -o-object-fit: cover;
            object-fit: cover;
     }
     
-    .happening-right-header {
+    .happening-right .happening-right-container .happening-right-header {
         top: 200px;
     }
     
-    .happening-right-time-ago {
+    .happening-right .happening-right-container .happening-right-time-ago {
         top: 226px;
     }
     
-    .container3 {
+    .happening-grid .happening-right .container3 {
         display: none;
     }
     
-    .size {
+    body .size {
         width: 768px;
     }
     
-    .footer {
+    body .footer {
         width: 768px;
         height: 316px;
         -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     }
     
-    .footer-right {
-        margin-top: -70px;
-    }
     
-    .left-container {
+    .foooter .footer-left .left-container {
         width: 570px;
     }
     
     
-    .links-grid {
+    .left-container .links-grid {
         row-gap: 10px;
         width: 250px;
     }
     
-    .footer-right {
+    footer .footer-right {
+        margin-top: -70px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
     }
     
-    .right-container {
+    .footer-right .footer--right-container {
         width: 608px;
         height: 66px;
     }
     
-    .email.grid {
+    .footer--right-container .email.grid {
         width: 280px;
         height: 64px;
         margin-left: 0px;
@@ -217,11 +215,11 @@
             align-self: flex-start;
     }
     
-    .email-text {
+    .email.grid .email-text {
         height: 10px;
     }
     
-    .social-links {
+    .footer-right .footer--right-container .social-links {
         margin-left: 190px;
         width: 136px;
         -ms-flex-item-align: end;
@@ -246,218 +244,3 @@
         -ms-grid-row: 3;
         -ms-grid-column: 3;
     }
-}
-       
-
-/* @media only screen and (max-width: 768px) {
-    
-.body {
-    width: 768px;
-}
-
-.header {
-    width: 768px;
-}
-
-.news {
-    display: grid;
-    grid-template-columns: 768px;
-}
-
-.news-left {
-    height: 400px;
-}
-
-.news-right {
-    height: 343px;
-}
-
-.news-left-container {
-    width: 608px;
-}
-
-.news-underline {
-    width: 600px;
-    margin-top: 29px;
-}
-
-.news-text-title {
-    margin-top: 36px;
-    margin-bottom: 9px;
-}
-
-.news-right {
-    display: grid;
-}
-
-.news-right-container {
-    width: 608px;
-    height: 223px;
-    display: grid;
-    grid-template-areas: 
-    "title title"
-    "travel technology";
-    gap: 40px;
-}
-
-.news-right-title {
-    grid-area: title;
-    margin: 0px;
-}
-
-.travel {
-    grid-area: travel;
-}
-
-.technology {
-    grid-area: technology;
-}
-
-.sec2-container {
-    width: 768px;
-    height: 1814px;
-}
-
-.sec2 {
-    top: 40px;
-    left: 80px;
-    bottom: 80px;
-    right: 80px;
-    width: 608px;
-}
-
-.trending {
-    width: 522px;
-    height: 22px;
-}
-
-.brackets2 {
-    margin-left: 34px;
-}
-
-.trending-grid {
-    width: 608px;
-    height: 350px;
-    grid-template-columns: repeat(2,284px);
-}
-
-.trending3 {
-    display: none;
-    pointer-events: none;
-    transform: translate(250%,0%);
-}
-
-.trending-image {
-    width: 284px;
-}
-
-.trending-heading {
-    width: 204px;
-}
-
-.trending-paragraph {
-    width: 204px;
-}
-
-.happening-grid {
-    width: 608px;
-    height: 1182px;
-    grid-template-columns: 608px;
-    row-gap: 40px;
-}
-
-.happening-right {
-    grid-template-columns: repeat(2,284px);
-    column-gap: 40px;
-    row-gap: 0px;
-}
-
-.happening-left-header {
-    width: 528px;
-}
-
-.happening-left-article {
-    width: 528px;
-    height: 107px;
-    grid-template-rows: 24px 47px;
-}
-
-.happening-left-article-text {
-    margin: 0px;
-}
-
-.image1 {
-    width: 608px;
-    height: 430px;
-    object-fit: cover;
-}
-
-.image2 {
-    width: 284px;
-    height: 180px;
-    object-fit: cover;
-}
-
-.happening-right-header {
-    top: 200px;
-}
-
-.happening-right-time-ago {
-    top: 226px;
-}
-
-.container3 {
-    display: none;
-}
-
-.size {
-    width: 768px;
-}
-
-.footer {
-    width: 768px;
-    height: 316px;
-    grid-template-columns: 100%;
-}
-
-.footer-right {
-    margin-top: -70px;
-}
-
-.left-container {
-    width: 570px;
-}
-
-
-.links-grid {
-    row-gap: 10px;
-    width: 250px;
-}
-
-.footer-right {
-    justify-content: center;
-}
-
-.right-container {
-    width: 608px;
-    height: 66px;
-}
-
-.email.grid {
-    width: 280px;
-    height: 64px;
-    margin-left: 0px;
-    align-self: flex-start;
-}
-
-.email-text {
-    height: 10px;
-}
-
-.social-links {
-    margin-left: 190px;
-    width: 136px;
-    align-self: flex-end;
-}
-}
-     */
