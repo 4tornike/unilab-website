@@ -1,7 +1,9 @@
 const postsUrl = 'https://jsonplaceholder.typicode.com/posts'
 let pagination = false
+var pages = document.getElementsByTagName('li')
 
 renderPosts()
+
 
 
 async function getData(url) {
@@ -50,23 +52,16 @@ async function renderPosts(postStart = 0,postEnd = 10,firstly = true) {
         }
     }
 
-    var pages = document.getElementsByTagName('li')
-
     for(let i = 0;i<pages.length;i++) {
-        pages[i].removeEventListener('click',() => console.log('removed'))
-
-        pages[i].addEventListener('click',(event) => {
-            pageNumber = parseInt(event.target.innerText)
-            let postStart = (pageNumber - 1) * 10
-            let postEnd = (pageNumber * 10)
-            renderPosts(postStart,postEnd,false)
-        })
-
+        pages[i].addEventListener('click',handleClick)
     }
 
 }
 
-
-
-
-
+function handleClick() {
+    pageNumber = parseInt(event.target.innerText)
+    let postStart = (pageNumber - 1) * 10
+    let postEnd = (pageNumber * 10)
+    pages[pageNumber-1].removeEventListener('click',handleClick)
+    renderPosts(postStart,postEnd,false)
+} 
